@@ -1,6 +1,6 @@
 let allAddBtn = document.querySelectorAll(".btn-primary");
-let allDelBtn = document.querySelectorAll(".btn-danger");
-let basketcount = document.querySelector(".basketcount");
+
+let basketCount = document.querySelector(".basketcount");
 let table = document.querySelector(".table");
 
 let basket = JSON.parse(localStorage.getItem("basket"));
@@ -11,7 +11,7 @@ if (localStorage.getItem("basket") == null) {
 function getBasketCount() {
   if (localStorage.getItem("basket") != null) {
     let basket = JSON.parse(localStorage.getItem("basket"));
-    basketcount.innerText = basket.length;
+    basketCount.innerText = basket.length;
   }
 }
 
